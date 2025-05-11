@@ -108,7 +108,7 @@
 &none             &none              &none                 &none              &mkp MB1     &mkp MB2  &mkp MB5  &mkp MB4                                                                 &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
     };
 };
