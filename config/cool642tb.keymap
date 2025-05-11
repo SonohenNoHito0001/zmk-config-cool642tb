@@ -70,12 +70,23 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E             &kp R      &kp T                                       &kp Y          &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D             &kp F      &kp G           &none          &kp PLUS     &kp H          &kp J  &kp K      &kp L       &kp SEMICOLON
+&kp A             &kp S         &kp D             &kp F      &kp G           &none          &kp PLUS     &kp H          &kp J  &lt 5 K    &kp L       &kp SEMICOLON
 &kp Z             &kp X         &kp C             &kp V      &kp B           &kp LC(SPACE)  &kp PIPE     &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 TAB  &kp LEFT_SHIFT  &lt 2 SPACE    &lt 1 SPACE  &lt 2 AT_SIGN                                &lt 3 MINUS
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 TAB  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 SPACE  &lt 1 AT_SIGN                                &lt 4 MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
+        };
+
+        FUNCTION {
+            bindings = <
+&kp ESC           &none          &kp ENTER         &none    &none                                            &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET
+&none             &kp LA(LG(S))  &kp DELETE        &none    &none           &none          &kp HOME          &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp END
+&none             &none          &none             &none    &none           &kp BACKSPACE  &kp LEFT_BRACKET  &kp TILDE  &kp QUESTION    &kp COMMA             &kp PERIOD             &kp AT
+&kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp TAB  &kp LEFT_SHIFT  &none          &none             &none                                                                   &kp LEFT_SHIFT
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         NUM {
@@ -89,15 +100,13 @@
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
-        FUNCTION {
+        ARROW {
             bindings = <
-&kp ESC           &none          &kp ENTER         &none    &none                                            &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&none             &kp LA(LG(S))  &kp DELETE        &none    &none           &none          &kp HOME          &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp END
-&none             &none          &none             &none    &none           &kp BACKSPACE  &kp LEFT_BRACKET  &kp TILDE  &kp QUESTION    &kp COMMA             &kp PERIOD             &kp QUESTION
-&kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp TAB  &kp LEFT_SHIFT  &none          &none             &none                                                                   &kp LEFT_SHIFT
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         MOUSE {
@@ -109,6 +118,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
         };
     };
 };
