@@ -31,19 +31,19 @@
         };
 
         comb3 {
-            bindings = <&lt 3 BACKSPACE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
             timeout-ms = <0>;
             layers = <1>;
         };
 
         comb4 {
-            bindings = <&lt 4 ENTER>;
+            bindings = <&kp ENTER>;
             key-positions = <21 20>;
         };
 
         comb5 {
-            bindings = <&lt 5 LC(LS(LEFT_ARROW))>;
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <32 33>;
         };
     };
@@ -68,13 +68,6 @@
         };
 
         // 新しいスクロール動作の追加
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            // 追加: スクロールのタップ時間を設定 (20ms)
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -82,13 +75,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R      &kp T                                       &kp Y          &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D             &kp F      &kp G           &none          &kp PLUS     &kp H          &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp Z             &kp X         &kp C             &kp V      &kp B           &kp LC(SPACE)  &kp PIPE     &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 TAB  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 SPACE  &lt 1 AT_SIGN                                &kp MINUS
+&kp Q        &kp W          &kp E             &kp R           &kp T                                        &kp Y          &kp U  &kp I      &kp O       &lt 3 P
+&kp A        &kp S          &kp D             &kp F           &kp G         &none             &kp PLUS     &kp H          &kp J  &kp K      &kp L       &lt 4 SEMICOLON
+&kp Z        &kp X          &kp C             &kp V           &kp B         &kp LEFT_BRACKET  &kp PIPE     &kp N          &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
+&lt 1 SPACE  &kp LC(SPACE)  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN      &lt 2 SPACE  &lt 1 AT_SIGN                                &kp MINUS
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         FUNCTION {
@@ -115,10 +108,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans
             >;
         };
 
@@ -142,6 +135,7 @@
             >;
 
             // マウススクロール
+
             sensor-bindings = <&scroll_up_down>;
         };
     };
