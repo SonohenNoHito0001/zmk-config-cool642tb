@@ -100,10 +100,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E             &kp R         &kp T                                            &kp Y          &kp U  &kp I      &kp O       &lt 3 P
-&kp A           &kp S             &kp D             &kp F         &kp G             &none             &kp PLUS     &kp H          &kp J  &kp K      &kp L       &lt 4 SEMICOLON
-&kp Z           &kp X             &kp C             &kp V         &kp B             &kp LEFT_BRACKET  &kp MINUS    &kp N          &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
-&kp LEFT_SHIFT  &kp LC(CAPSLOCK)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE       &lt 2 SPACE  &lt 1 AT_SIGN                                &kp RIGHT_SHIFT
+&kp Q           &kp W             &kp E             &kp R         &kp T                                            &kp Y            &kp U  &kp I      &kp O       &lt 3 P
+&kp A           &kp S             &kp D             &kp F         &kp G             &none             &kp PLUS     &kp H            &kp J  &kp K      &kp L       &lt 4 COLON
+&kp Z           &kp X             &kp C             &kp V         &kp B             &kp LEFT_BRACKET  &kp MINUS    &kp N            &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
+&kp LEFT_SHIFT  &kp LC(CAPSLOCK)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE       &lt 2 SPACE  &lt 1 BACKSPACE                                &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -111,13 +111,13 @@
 
         FUNCTION {
             bindings = <
-&kp ESC         &none          &kp ENTER         &none         &none                                      &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET
-&none           &kp LA(LG(S))  &kp DELETE        &none         &none             &none  &kp HOME          &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp END
-&none           &none          &none             &none         &kp BACKSPACE     &none  &kp LEFT_BRACKET  &kp TILDE  &kp QUESTION    &kp COMMA             &kp PERIOD             &kp AT
-&kp LEFT_SHIFT  &kp LC(SPACE)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none  &none             &none                                                                   &kp LEFT_SHIFT
+&kp ESC         &none          &kp ENTER         &none         &none                                      &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp CARET        &kp PIPE
+&none           &kp LG(S)      &kp DELETE        &none         &none             &none  &kp HOME          &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW  &kp END
+&none           &none          &none             &none         &kp BACKSPACE     &none  &kp LEFT_BRACKET  &kp TILDE  &kp AT          &kp AMPERSAND         &kp QUESTION     &kp UNDERSCORE
+&kp LEFT_SHIFT  &kp LC(SPACE)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none  &none             &none                                                             &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp BACKSPACE DELETE>;
+            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
 
         NUM {
@@ -144,10 +144,10 @@
 
         MOUSE {
             bindings = <
-&kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR         &kp PERCENT                               &kp AMPS  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp PIPE  &kp INT_YEN
-&kp LS(LA(LEFT))  &kp LS(LA(DOWN))   &kp LS(LA(UP_ARROW))  &kp LA(LS(RIGHT))  &none             &none  &kp PRINTSCREEN  &none     &mkp LCLK         &mkp RCLK             &none     &none
-&none             &none              &none                 &none              &none             &none  &none            &none     &kp LS(LA(M))     &none                 &none     &none
-&kp LEFT_SHIFT    &none              &kp LEFT_CONTROL      &kp LEFT_ALT       &kp LEFT_COMMAND  &none  &mkp MB5         &mkp MB4                                                    &none
+&kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR         &kp PERCENT                                    &kp AMPS  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp PIPE  &kp LA(BACKSLASH)
+&kp LS(LA(LEFT))  &kp LS(LA(DOWN))   &kp LS(LA(UP_ARROW))  &kp LA(LS(RIGHT))  &none             &none  &kp LG(LS(NUMBER_4))  &none     &mkp LCLK         &mkp RCLK             &none     &none
+&none             &none              &none                 &none              &none             &none  &none                 &none     &kp LS(LA(M))     &none                 &none     &none
+&kp LEFT_SHIFT    &none              &kp LEFT_CONTROL      &kp LEFT_ALT       &kp LEFT_COMMAND  &none  &mkp MB5              &mkp MB4                                                    &none
             >;
 
             sensor-bindings = <&inc_dec_kp DELETE BACKSPACE>;
