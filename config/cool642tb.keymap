@@ -158,7 +158,7 @@
 &trans          &trans  &trans            &trans        &trans                            &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans            &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans            &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans  &trans  &trans                          &trans
+&kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans  &trans  &trans                          &trans
             >;
 
             // マウススクロール
