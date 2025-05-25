@@ -104,10 +104,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC           &none          &kp ENTER         &none         &none                                    &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp CARET        &kp MINUS
-&none             &kp LG(S)      &kp DELETE        &none         &none           &none  &kp HOME          &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW  &kp END
-&none             &none          &none             &none         &kp BACKSPACE   &none  &kp LEFT_BRACKET  &kp GRAVE  &kp AT          &kp AMPERSAND         &kp QUESTION     &kp UNDERSCORE
-&kp LEFT_COMMAND  &kp LC(SPACE)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none  &none             &none                                                             &kp LEFT_SHIFT
+&kp ESC           &none          &kp ENTER         &none         &none                                     &kp AMPS   &kp SQT         &kp LEFT_PARENTHESIS  &kp CARET        &kp MINUS
+&none             &kp LG(S)      &kp DELETE        &none         &none           &none  &kp HOME           &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW  &kp END
+&none             &none          &none             &none         &kp BACKSPACE   &none  &kp RIGHT_BRACKET  &kp GRAVE  &kp AT          &kp AMPERSAND         &kp QUESTION     &kp UNDERSCORE
+&kp LEFT_COMMAND  &kp LC(SPACE)  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &none  &none              &none                                                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
