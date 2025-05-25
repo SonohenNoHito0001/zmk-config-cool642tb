@@ -166,6 +166,8 @@
 &trans  &trans           &trans             &trans    &trans       &trans  &kp PIPE       &kp AT         &kp GRAVE         &kp CARET             &kp TILDE              &kp SEMICOLON
 &trans  &trans           &trans             &trans    &trans       &trans  &trans         &trans                                                                        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
     };
 };
