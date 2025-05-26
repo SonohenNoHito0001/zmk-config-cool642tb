@@ -161,10 +161,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp PERCENT                         &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&trans  &trans           &trans             &trans    &trans       &trans  &kp AMPERSAND  &kp PLUS       &kp MINUS         &kp ASTERISK          &kp SLASH              &kp COLON
-&trans  &trans           &trans             &trans    &trans       &trans  &kp PIPE       &kp AT         &kp GRAVE         &kp CARET             &kp TILDE              &kp SEMICOLON
-&trans  &trans           &trans             &trans    &trans       &trans  &trans         &trans                                                                        &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                         &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&trans           &trans             &trans    &trans      &trans       &trans  &kp AMPERSAND  &kp PLUS       &kp MINUS         &kp ASTERISK          &kp SLASH              &kp COLON
+&trans           &trans             &trans    &trans      &trans       &trans  &kp PIPE       &kp AT         &kp GRAVE         &kp CARET             &kp TILDE              &kp SEMICOLON
+&trans           &trans             &trans    &trans      &trans       &trans  &trans         &trans                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
