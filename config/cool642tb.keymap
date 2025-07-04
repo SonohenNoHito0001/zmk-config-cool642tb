@@ -147,6 +147,8 @@
 &trans            &trans  &trans            &trans        &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_CONTROL  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &lt 2 CAPSLOCK  &trans  &trans                          &kp RIGHT_CONTROL
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         SYMBOL {
