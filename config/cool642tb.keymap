@@ -203,7 +203,7 @@
 &trans            &trans            &trans                &trans             &trans                                &trans    &trans         &trans     &trans  &trans
 &kp LS(LA(LEFT))  &kp LS(LA(DOWN))  &kp LS(LA(UP_ARROW))  &kp LA(LS(RIGHT))  &trans  &trans  &kp LG(LS(NUMBER_4))  &trans    &mkp LCLK      &mkp RCLK  &trans  &trans
 &trans            &trans            &trans                &trans             &trans  &trans  &trans                &trans    &kp LS(LA(M))  &trans     &trans  &trans
-&trans            &trans            &trans                &trans             &trans  &trans  &mkp MB5              &mkp MB4                                    &trans
+&trans            &trans            &trans                &trans             &trans  &trans  &kp BACKSPACE         &mkp MB4                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DELETE BACKSPACE>;
