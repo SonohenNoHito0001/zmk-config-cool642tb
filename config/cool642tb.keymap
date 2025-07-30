@@ -158,10 +158,10 @@
 
         SYMBOL1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON     &kp SINGLE_QUOTE   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans            &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp SEMICOLON
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
