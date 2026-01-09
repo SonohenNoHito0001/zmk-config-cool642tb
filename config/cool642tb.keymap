@@ -146,10 +146,10 @@
 
         mac {
             bindings = <
-&kp Q               &kp W           &kp E             &kp R         &kp T                                             &kp Y        &kp U  &kp I      &kp O         &lt 7 P
-&mt LEFT_CONTROL A  &kp S           &kp D             &kp F         &kp G        &none             &kp LC(SPACE)      &kp H        &kp J  &kp K      &lt 5 L       &kp ENTER
-&mt LEFT_SHIFT Z    &kp X           &kp C             &kp V         &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &lt 6 PERIOD  &kp SLASH
-&kp LEFT_COMMAND    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 2 SPACE  &lt 4 DELETE      &lt 2 BACKSPACE    &lt 3 SPACE                                  &kp UNDERSCORE
+&kp Q               &kp W           &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O         &lt 7 P
+&mt LEFT_CONTROL A  &kp S           &kp D             &kp F         &kp G        &none           &kp LC(SPACE)    &kp H        &kp J  &kp K      &lt 5 L       &kp ENTER
+&mt LEFT_SHIFT Z    &kp X           &kp C             &kp V         &kp B        &kp LANGUAGE_1  &kp LANGUAGE_2   &kp N        &kp M  &kp COMMA  &lt 6 PERIOD  &kp SLASH
+&kp LEFT_COMMAND    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 2 SPACE  &lt 4 DELETE    &lt 2 BACKSPACE  &lt 3 SPACE                                  &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -168,10 +168,10 @@
 
         SYMBOL {
             bindings = <
-&trans            &trans          &trans     &trans        &trans                     &kp EXCLAMATION  &kp AT         &kp HASH      &kp DLLR              &kp PRCNT
-&kp LC(SPACE)     &trans          &trans     &trans        &trans  &trans  &kp GRAVE  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans            &trans          &trans     &trans        &trans  &trans  &trans     &trans           &trans         &kp LT        &kp GREATER_THAN      &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans  &trans  &trans     &trans                                                              &kp BACKSLASH
+&kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR    &kp PERCENT                  &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&trans            &trans             &trans     &trans        &trans       &trans  &trans  &trans         &trans            &kp AT_SIGN           &kp GRAVE              &kp LEFT_BRACKET
+&trans            &trans             &trans     &trans        &trans       &trans  &trans  &trans         &trans            &kp SEMICOLON         &kp COLON              &kp RIGHT_BRACKET
+&kp LEFT_COMMAND  &kp LEFT_SHIFT     &kp LCTRL  &kp LEFT_ALT  &trans       &trans  &trans  &trans                                                                        &kp BACKSLASH
             >;
         };
 
